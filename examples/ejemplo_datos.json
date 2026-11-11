@@ -1,0 +1,202 @@
+{
+  "titulo": "El faro de la gaviota",
+  "autor": "Autor de ejemplo",
+  "importante": "junto a cada respuesta se indica el capítulo del libro donde está la frase.",
+  "como_usar": [
+    "Lee primero los capítulos de esa parte.",
+    "Responde sin mirar el libro.",
+    "Revisa tus respuestas en **Respuestas**, al final de la guía.",
+    "Si te equivocaste, busca el capítulo indicado y lee la frase del libro."
+  ],
+  "secciones": [
+    {
+      "titulo": "Sección inicial: Sobre el libro",
+      "a": [
+        {
+          "pregunta": "¿Cuántos capítulos tiene el libro?",
+          "correcta": "Dos.",
+          "distractores": ["Tres.", "Cuatro.", "Uno."],
+          "nota": "El libro tiene dos capítulos: «La gaviota del faro» y «La noche sin luz»."
+        },
+        {
+          "pregunta": "¿Qué oficio tiene el hombre que enciende la lámpara del faro?",
+          "correcta": "Torrero.",
+          "distractores": ["Panadero.", "Marinero.", "Carpintero."],
+          "cita": "el torrero subía los ciento ocho escalones para encender la lámpara",
+          "ubicacion": "cap. 1"
+        }
+      ]
+    },
+    {
+      "titulo": "Parte I: Capítulo 1",
+      "a": [
+        {
+          "pregunta": "¿De qué color era el faro?",
+          "correcta": "Blanco.",
+          "distractores": ["Rojo.", "Gris.", "Amarillo."],
+          "cita": "un faro blanco y solitario",
+          "ubicacion": "cap. 1"
+        },
+        {
+          "pregunta": "¿Cuántos escalones subía el torrero para encender la lámpara?",
+          "correcta": "Ciento ocho.",
+          "distractores": ["Cuarenta y dos.", "Sesenta.", "Doscientos."],
+          "cita": "los ciento ocho escalones",
+          "ubicacion": "cap. 1"
+        }
+      ],
+      "personajes": ["el torrero", "la niña del panadero"],
+      "b": [
+        {
+          "cita": "Si la luz se apaga",
+          "quien": "el torrero",
+          "ubicacion": "cap. 1"
+        }
+      ],
+      "c": {
+        "hechos": [
+          { "texto": "El torrero le explica a Alma que la luz no puede apagarse.", "orden": 1 },
+          { "texto": "Alma guarda la frase en su memoria.", "orden": 2 },
+          { "texto": "El torrero enferma en una noche de tormenta.", "orden": 3 },
+          { "texto": "Alma despierta a la niña del panadero.", "orden": 4 }
+        ],
+        "ubicacion": "cap. 1–2"
+      },
+      "d": [
+        {
+          "afirmacion": "El faro tenía ciento ocho escalones.",
+          "vof": "V",
+          "cita": "los ciento ocho escalones",
+          "ubicacion": "cap. 1"
+        },
+        {
+          "afirmacion": "El torrero pudo encender la lámpara esa noche de tormenta.",
+          "vof": "F",
+          "cita": "el torrero enfermó y no pudo subir",
+          "ubicacion": "cap. 2"
+        },
+        {
+          "afirmacion": "Alma despertó al panadero golpeando la puerta.",
+          "vof": "F",
+          "cita": "golpeó el cristal con el pico hasta despertar a la niña del panadero",
+          "ubicacion": "cap. 2"
+        }
+      ],
+      "e": [
+        {
+          "contexto": "había aprendido a leer el viento antes que a volar",
+          "palabra": "leer el viento",
+          "correcta": "adivinar cómo va a soplar y qué tiempo va a hacer",
+          "distractores": ["leer un libro en voz alta", "silbar una canción", "mirar el mar desde lo alto"],
+          "ubicacion": "cap. 1"
+        }
+      ],
+      "f": [
+        {
+          "pregunta": "¿Por qué el torrero dice que la luz no puede apagarse?",
+          "idea": "Porque los barcos no encuentran el camino.",
+          "cita": "los barcos no encuentran el camino",
+          "ubicacion": "cap. 1"
+        },
+        {
+          "pregunta": "¿Qué habrías hecho tú si fueras la niña del panadero?",
+          "personal": true,
+          "pista": "piensa en lo que ella hizo y en lo que harías tú en su lugar."
+        }
+      ]
+    },
+    {
+      "titulo": "Parte II: Capítulo 2",
+      "a": [
+        {
+          "pregunta": "¿Por qué no pudo el torrero encender la lámpara?",
+          "correcta": "Porque enfermó.",
+          "distractores": ["Porque se quedó dormido.", "Porque se rompió la lámpara.", "Porque estaba de viaje."],
+          "cita": "el torrero enfermó y no pudo subir",
+          "ubicacion": "cap. 2"
+        },
+        {
+          "pregunta": "¿Qué llevó la niña al faro?",
+          "correcta": "Una linterna.",
+          "distractores": ["Una vela.", "Una cuerda.", "Un farol de aceite."],
+          "cita": "corrió al faro con una linterna",
+          "ubicacion": "cap. 2"
+        }
+      ],
+      "personajes": ["el torrero", "la niña del panadero"],
+      "b": [
+        {
+          "cita": "¡Ya voy, Alma!",
+          "quien": "la niña del panadero",
+          "ubicacion": "cap. 2"
+        }
+      ],
+      "c": {
+        "hechos": [
+          { "texto": "Alma golpea el cristal con el pico.", "orden": 1 },
+          { "texto": "La niña corre al faro con una linterna.", "orden": 2 },
+          { "texto": "La gente del cabo aprende a mirar el cielo.", "orden": 3 }
+        ],
+        "ubicacion": "cap. 2"
+      },
+      "d": [
+        {
+          "afirmacion": "Alma despertó a la niña del panadero.",
+          "vof": "V",
+          "cita": "hasta despertar a la niña del panadero",
+          "ubicacion": "cap. 2"
+        },
+        {
+          "afirmacion": "El faro quedó a oscuras para siempre.",
+          "vof": "F",
+          "cita": "corrió al faro con una linterna",
+          "ubicacion": "cap. 2"
+        },
+        {
+          "afirmacion": "La gente del cabo aprendió a leer el viento.",
+          "vof": "F",
+          "cita": "la gente del cabo aprendió a mirar el cielo",
+          "ubicacion": "cap. 2"
+        }
+      ],
+      "e": [
+        {
+          "contexto": "era una señal de auxilio",
+          "palabra": "auxilio",
+          "correcta": "la ayuda que se pide en un momento de peligro",
+          "distractores": ["una fiesta", "un castigo", "un saludo"],
+          "ubicacion": "cap. 2"
+        }
+      ],
+      "f": [
+        {
+          "pregunta": "¿Por qué la niña entendió el mensaje de Alma?",
+          "idea": "Porque Alma había ido a buscarla golpeando el cristal.",
+          "cita": "La niña entendió el mensaje en seguida",
+          "ubicacion": "cap. 2"
+        },
+        {
+          "pregunta": "¿Qué te parece que aprendió la gente del cabo esa noche?",
+          "personal": true,
+          "pista": "fíjate en la última frase del capítulo."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "titulo": "Para pensar en todo el libro",
+    "preguntas": [
+      {
+        "pregunta": "¿Por qué es importante que alguien encienda el faro cada noche?",
+        "idea": "Porque los barcos necesitan esa luz para encontrar el camino.",
+        "cita": "los barcos no encuentran el camino",
+        "ubicacion": "cap. 1"
+      },
+      {
+        "pregunta": "¿Qué te gustó más del libro? ¿Por qué?",
+        "personal": true,
+        "pista": "nombra un momento y di qué te hizo sentir."
+      }
+    ]
+  }
+}

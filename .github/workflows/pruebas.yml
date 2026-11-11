@@ -1,0 +1,25 @@
+name: pruebas
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar dependencias de los scripts
+        run: pip install pymupdf pillow numpy reportlab
+      - name: Banco de pruebas (sin libro real)
+        run: python -I tests/run_tests.py
+      - name: Los scripts se pueden ejecutar y muestran su ayuda
+        run: |
+          python -I scripts/verificar_clave.py 2>&1 | head -3
+          python -I scripts/verificar_citas.py 2>&1 | head -3
+          python -I scripts/generar_pdf.py 2>&1 | head -3 || true

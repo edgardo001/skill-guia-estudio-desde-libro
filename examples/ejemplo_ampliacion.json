@@ -1,0 +1,20 @@
+{
+  "Parte I: Capítulo 1": [
+    {
+      "pregunta": "¿Dónde estaba posada Alma mientras el torrero encendía la lámpara?",
+      "correcta": "En la baranda.",
+      "distractores": ["En el tejado.", "En la ventana.", "En el suelo."],
+      "cita": "posada en la baranda",
+      "ubicacion": "cap. 1"
+    }
+  ],
+  "Parte II: Capítulo 2": [
+    {
+      "pregunta": "¿A qué ventana voló Alma?",
+      "correcta": "A la ventana de la casa del pueblo.",
+      "distractores": ["A la del faro.", "A la de la panadería.", "A la del torrero."],
+      "cita": "Voló hasta la ventana de la casa del pueblo",
+      "ubicacion": "cap. 2"
+    }
+  ]
+}
