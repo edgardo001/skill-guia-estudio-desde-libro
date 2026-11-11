@@ -42,18 +42,37 @@ INFORME.md          qué se hizo y qué quedó dudoso
 
 ## Instalación
 
+### Método 1: Automático con `npx skills` (Recomendado)
+
+Si tienes Node.js (v20+), puedes instalar la skill con un solo comando gracias al ecosistema de [skills.sh](https://skills.sh):
+
+```bash
+# Para instalarla solo en el proyecto actual:
+npx skills add edgardo001/skill-guia-estudio-desde-libro
+
+# O para instalarla globalmente (disponible en todos tus proyectos):
+npx skills add edgardo001/skill-guia-estudio-desde-libro -g
+```
+
+El instalador detecta automáticamente el agente que estés usando (Antigravity, Claude Code, Cursor, Codex, Cline, Amp, OpenCode y más) y configura la skill en el lugar correspondiente sin pasos manuales.
+
+---
+
+### Método 2: Instalación manual (Git clone)
+
 El repositorio **es** la skill. El nombre de la carpeta de destino debe ser
 `guia-estudio-desde-libro`, igual que el campo `name` de `SKILL.md`.
 
 | Agente | Global (todos los proyectos) | Solo un proyecto |
 |---|---|---|
+| Antigravity | `~/.gemini/skills/guia-estudio-desde-libro` | `.agents/skills/guia-estudio-desde-libro` |
 | Claude Code | `~/.claude/skills/guia-estudio-desde-libro` | `.claude/skills/guia-estudio-desde-libro` |
 | Codex CLI | `~/.codex/skills/guia-estudio-desde-libro` | `.agents/skills/guia-estudio-desde-libro` |
 | OpenCode | `~/.config/opencode/skills/guia-estudio-desde-libro` | `.opencode/skills/guia-estudio-desde-libro` (también lee `.claude/skills` y `.agents/skills`) |
 
 ```bash
 git clone https://github.com/edgardo001/skill-guia-estudio-desde-libro.git \
-  ~/.claude/skills/guia-estudio-desde-libro
+  ~/.agents/skills/guia-estudio-desde-libro
 ```
 
 Para varios agentes, clona una vez y enlaza la carpeta en los demás. Así un `git pull` los
@@ -61,15 +80,17 @@ actualiza a todos.
 
 ```powershell
 # Windows (PowerShell). La unión de directorios no requiere permisos de administrador.
-git clone https://github.com/edgardo001/skill-guia-estudio-desde-libro.git "$HOME\.claude\skills\guia-estudio-desde-libro"
-New-Item -ItemType Junction -Path "$HOME\.codex\skills\guia-estudio-desde-libro" -Target "$HOME\.claude\skills\guia-estudio-desde-libro"
+git clone https://github.com/edgardo001/skill-guia-estudio-desde-libro.git "$HOME\.agents\skills\guia-estudio-desde-libro"
+New-Item -ItemType Junction -Path "$HOME\.gemini\skills\guia-estudio-desde-libro" -Target "$HOME\.agents\skills\guia-estudio-desde-libro"
+New-Item -ItemType Junction -Path "$HOME\.codex\skills\guia-estudio-desde-libro" -Target "$HOME\.agents\skills\guia-estudio-desde-libro"
 ```
 
 ```bash
 # macOS / Linux
-git clone https://github.com/edgardo001/skill-guia-estudio-desde-libro.git ~/.claude/skills/guia-estudio-desde-libro
-ln -s ~/.claude/skills/guia-estudio-desde-libro ~/.codex/skills/guia-estudio-desde-libro
-ln -s ~/.claude/skills/guia-estudio-desde-libro ~/.config/opencode/skills/guia-estudio-desde-libro
+git clone https://github.com/edgardo001/skill-guia-estudio-desde-libro.git ~/.agents/skills/guia-estudio-desde-libro
+ln -s ~/.agents/skills/guia-estudio-desde-libro ~/.claude/skills/guia-estudio-desde-libro
+ln -s ~/.agents/skills/guia-estudio-desde-libro ~/.codex/skills/guia-estudio-desde-libro
+ln -s ~/.agents/skills/guia-estudio-desde-libro ~/.config/opencode/skills/guia-estudio-desde-libro
 ```
 
 Las rutas cambian entre versiones de cada agente. Si no encuentra la skill, revisa su
